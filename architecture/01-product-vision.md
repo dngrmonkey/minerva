@@ -642,4 +642,4 @@ Those belong to the next architecture layer.
 
 **Next architectural artifact:**
 
-**02 — Minerva Shared Architecture**
+**02 — Minerva Shared Architecture** — completed and approved as the shared architectural baseline on 2026-11-04. See [02 — Minerva Shared Architecture](02-shared-architecture.md).
