@@ -518,7 +518,7 @@ The first interaction prototype should validate this sequence:
 11. The Work Surface opens for artifact review.
 12. Review state and Project Guide update from the same underlying project state.
 
-The initial scenario is the Tutor.com counselor-training concept used during UX development.
+The prototype must remain subject-agnostic. The Tutor.com counselor-training concept may be used only as a validation/regression case after the generic interaction model is defined.
 
 ---
 
@@ -541,6 +541,10 @@ The following remain implementation/design decisions rather than approved archit
 - provider/model selection;
 - production-engine implementation.
 
+### Standalone application boundary
+
+Minerva is intended to run in its own dedicated application window and ultimately as a standalone application. The UX, project state, orchestration model, and specialist interfaces must remain independent of ChatGPT, Claude, or any other host AI chat product. AI providers and production engines are implementation services behind the Minerva application boundary.
+
 The approved architecture defines behavior and authority, not final visual styling or technology selection.
 
 ---
@@ -550,12 +554,13 @@ The approved architecture defines behavior and authority, not final visual styli
 **Product Vision:** Defined  
 **Shared Architecture:** Approved baseline  
 **Implementation architecture:** Not yet defined  
-**Prototype:** Not yet built
+**Core Platform & Capability Architecture:** Required next  
+**Prototype:** Deferred until Core Platform & Capability Architecture is defined
 
-The shared architecture is sufficient to begin prototype validation.
+A material architectural gap was identified before prototype work: Minerva still needs a subject-agnostic bootstrap model, an explicit pre-routing shared-truth model, a durable specialist framework, a capability registry, engine-to-specialist capability inheritance, extensibility rules for future specialists, and formal multi-specialist participation behavior.
 
-The architecture should now be tested through a low-fidelity interaction prototype rather than expanded through additional abstract contracts unless the prototype exposes a real architectural gap.
+The Tutor.com project remains a validation case rather than the prototype's architectural basis.
 
 **Exact next action:**
 
-> Build the first low-fidelity Tutor.com Minerva interaction prototype covering entry, discovery, progressive left-frame state, specialist invocation, quiet specialist status, meaningful specialist contributions, Minerva synthesis, and artifact/review transition.
+> Define **03 — Minerva Core Platform & Capability Architecture** covering Project Bootstrap, pre-routing Shared Project Truth, Specialist Framework, Capability Manifest/Registry, specialist-vs-engine hierarchy, engine capability inheritance, capability-based routing, multi-specialist conversation rules, standalone application boundary implications, and extensibility rules for future specialists.
